@@ -1,12 +1,10 @@
-const resultElements = document.querySelector('.result');
-
 function generateNumber() {
-    const firstNumberElement = Math.ceil(document.getElementById('firstNumber').value);
-    const lastNumberElement = Math.floor(document.querySelector('#lastNumber').value);
+    const min = Math.ceil(document.querySelector('#min').value);
+    const max = Math.floor(document.querySelector('#max').value);
+    const pressResult = document.querySelector('.pressResult');
 
+    const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    const drawnNumber = Math.floor(Math.random() * (lastNumberElement - firstNumberElement + 1)) + firstNumberElement;
+    pressResult.innerHTML = `O resultado é: ${result}`;
 
-    resultElements.innerHTML = `O número sorteado é: ${drawnNumber}`;
-
-}
+};

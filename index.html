@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="data:,">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto em Branco</title>
@@ -13,14 +14,14 @@
         <div>
             <img src="./assets/cubeimg.png" alt="Imagem de um cubo" />
             <h1>DevSorteio</h1>
-            <p class="result"></p>
+            <p class="pressResult"></p>
         </div>
         <div>
             <form>
                 <h2>Sortear um número</h2>
                 <div>
-                    <input type="number" id="firstNumber" name="firstNumber" placeholder="Primeiro Número" />
-                    <input type="number" id="lastNumber" name="lastNumber" placeholder="Último Número" />
+                    <input type="number" id="min" placeholder="Primeiro Número" />
+                    <input type="number" id="max" placeholder="Último Número" />
                 </div>
                 <button onclick="generateNumber()" id="sortButton">Sortear</button>
             </form>
