@@ -18,6 +18,10 @@ img {
     width: 300px;
 }
 
+.result {
+    color: #ffffff;
+}
+
 form {
     display: flex;
     flex-direction: column;

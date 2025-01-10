@@ -13,6 +13,7 @@
         <div>
             <img src="./assets/cubeimg.png" alt="Imagem de um cubo" />
             <h1>DevSorteio</h1>
+            <p class="result"></p>
         </div>
         <div>
             <form>
@@ -21,12 +22,13 @@
                     <input type="number" id="firstNumber" name="firstNumber" placeholder="Primeiro Número" />
                     <input type="number" id="lastNumber" name="lastNumber" placeholder="Último Número" />
                 </div>
-                <button id="sortButton">Sortear</button>
+                <button onclick="generateNumber()" id="sortButton">Sortear</button>
             </form>
         </div>
     </main>
 
-    <script src="script.js"></script>
+
 </body>
+<script src="script.js"></script>
 
 </html>
